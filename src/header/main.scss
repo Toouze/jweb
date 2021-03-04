@@ -1,0 +1,84 @@
+@keyframes arrow-down {
+    0%{
+        opacity: 0;
+        transform: translate(0px,-8px) scale(1.4);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translate(0px,25px) scale(1.4);
+    }
+}
+
+
+
+
+
+#header {
+    width: 100%;
+    height: 937px;
+    margin: 0;
+
+    > .dots {
+        background-image: url('/img/dot.jpg');
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    > .gray-back {
+        position: absolute;
+        background-color: #123E62;
+        width: 100%;
+        height: 100%;
+        opacity: 0.1;
+    }
+    > .header__image {
+        background-image: url('/img/cover.jpg');
+        width: 100%;
+        height: 100%;
+        background-size: 100%;
+        position: absolute;
+    }
+}
+
+.header__title {
+    display: grid;
+    margin: 0 auto;
+    color: white;
+    width: 75%;
+    text-align: center;
+    height: 150px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 400px;
+    
+    > .title__who {
+        font-weight: 500;
+        font-size: 43px;
+        letter-spacing: 5px;
+    }
+}
+ .toServices {
+    transform: translate(0px, 280px);
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+    > .material-icons {
+        color: white;
+        margin-left: 8px;
+        animation: arrow-down 1.5s infinite;
+        width: 10px;
+        height: 10px;
+    }
+}
+
+
+.header__info {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}

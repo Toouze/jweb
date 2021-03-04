@@ -1,0 +1,37 @@
+#body__nav {
+    width: 100%;
+    height: 50px;
+    position: sticky; 
+    top: 0px;
+    background-color: white;
+    z-index: 2;
+    box-shadow: 0 1px 0px rgba(0, 0, 0, .05);
+    > .nav__logo {
+        font-weight: 700;
+        font-size: 22px;
+        font-family: Lobster, cursive;
+        transform: translate(320px, 10px);
+        letter-spacing: 4px;
+        width: 10%;
+        cursor: pointer;
+    }
+    > .nav__navigation {
+        display: grid;
+        width: 30%;
+        grid-template-columns: 50px 50px 50px 100px 50px;
+        gap: 50px;
+        transform: translate(970px, -15px);
+        font-family: Raleway, sans-serif;
+        font-size: 11px;
+        font-weight: 300;
+        letter-spacing: 3px;
+        
+        > * {
+            cursor: pointer;
+            transition: .5s ease;
+        }
+        > *:hover {
+            color: #F0B1B0;
+        }
+    }
+}
